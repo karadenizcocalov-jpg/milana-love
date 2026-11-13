@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe4ef">
+<title>Для Миланы ♡</title>
+<style>
+:root{--pink:#ff78a8;--deep:#b83268;--cream:#fff8fb}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#69354b;background:linear-gradient(145deg,#fff0f6,#ffe0ec 55%,#fff7fb);min-height:100vh;overflow-x:hidden}
+button{border:0;border-radius:999px;padding:14px 23px;background:linear-gradient(135deg,#ff8eb6,#ed5c96);color:white;font-size:16px;font-weight:700;box-shadow:0 9px 22px #df659044;cursor:pointer}
+button:active{transform:scale(.97)}
+main{width:min(920px,92vw);margin:auto;padding:38px 0 70px;text-align:center;position:relative;z-index:1}
+h1{font-size:clamp(36px,8vw,62px);margin:15px 0;color:#b83268}
+h2{font-size:clamp(26px,6vw,39px);color:#b83268}
+p{line-height:1.75}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;color:#d66b94;font-size:12px;font-weight:800}
+.panel{background:#ffffffc9;border:1px solid #fff;box-shadow:0 18px 55px #a93c6817;border-radius:28px;padding:clamp(22px,5vw,42px);margin:22px auto;backdrop-filter:blur(8px)}
+.hero{padding-top:8vh}
+.sub{font-size:18px;max-width:600px;margin:0 auto 26px}
+.hidden{display:none!important}
+.heart{position:fixed;bottom:-40px;z-index:0;pointer-events:none;animation:rise linear forwards;opacity:.55}
+@keyframes rise{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.envelope{font-size:92px;animation:bob 2s ease-in-out infinite;filter:drop-shadow(0 12px 10px #d45d8b30)}
+@keyframes bob{50%{transform:translateY(-12px) rotate(3deg)}}
+.letter{max-width:680px;margin:18px auto 0;text-align:left;background:#fffdfd;border-radius:18px;padding:25px;box-shadow:inset 0 0 0 1px #ffe0eb;white-space:pre-line;font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:24px 0}
+.reason{background:#fff;border-radius:20px;padding:20px;box-shadow:0 8px 25px #9c416015}
+.reason b{display:block;color:#bd4777;margin:8px}
+.galaxy{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 55%,#3e286f,#171638 55%,#080b20);color:#fff;border-radius:26px;min-height:440px;padding:34px 15px}
+.galaxy h2{color:#fff}
+.stars{position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#b9baff 1px,transparent 1.5px);background-size:53px 53px,91px 91px;background-position:0 0,23px 37px;opacity:.55;animation:twinkle 3s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.9}}
+.beam{position:absolute;top:58%;left:-10%;width:120%;height:3px;background:linear-gradient(90deg,transparent,#a6eaff,#fff,#e3a9ff,transparent);box-shadow:0 0 16px 5px #b58cff;transform:rotate(-7deg)}
+.words{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:48px auto 10px;max-width:720px}
+.words span{font-size:clamp(14px,3vw,20px);font-weight:700;color:#fff;text-shadow:0 0 12px #d3b8ff;animation:glow 2.4s ease-in-out infinite alternate}
+.words span:nth-child(2n){animation-delay:.8s}
+@keyframes glow{to{opacity:.55;transform:translateY(-4px)}}
+.small{font-size:13px;color:#a45c7a}
+footer{margin-top:32px;color:#bb7892;font-size:13px}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+<section id="start" class="hero">
+<div class="eyebrow">маленький сюрприз для одного особенного человека</div>
+<h1>Для Миланы ♡</h1>
+<p class="sub">Я приготовил для тебя кое-что. Нажми на кнопку и загляни внутрь 💗</p>
+<button onclick="show('letterScene')">Открыть мой сюрприз 💌</button>
+<div style="font-size:34px;margin-top:28px">🌷 💗 ✨ 🌸</div>
+</section>
+
+<section id="letterScene" class="panel hidden">
+<div class="envelope">💌</div>
+<h2>Письмо для тебя</h2>
+<div class="letter">Милая Милана,
+
+Я не всегда умею подобрать правильные слова, поэтому решил создать для тебя кое-что особенное.
+
+Мне нравится твоя улыбка, твой голос и то, как даже обычные моменты становятся теплее, когда мы общаемся. Я ценю твою заботу, твою нежность и то, какая ты есть.
+
+Я не обещаю быть идеальным, но хочу чаще радовать тебя, поддерживать и дарить поводы улыбаться. Спасибо, что ты есть в моей жизни.
+
+С теплом, от меня — тебе. ♡</div>
+<button style="margin-top:25px" onclick="show('reasonsScene')">Дальше 🌷</button>
+</section>
+
+<section id="reasonsScene" class="panel hidden">
+<div class="eyebrow">несколько маленьких причин</div>
+<h2>Что мне в тебе нравится 🌸</h2>
+<div class="cards">
+<div class="reason"><div style="font-size:35px">😊</div><b>Твоя улыбка</b><span>Она умеет сделать день чуточку светлее.</span></div>
+<div class="reason"><div style="font-size:35px">💬</div><b>Наши разговоры</b><span>Даже простые темы с тобой становятся интересными.</span></div>
+<div class="reason"><div style="font-size:35px">🫶</div><b>Твоя забота</b><span>В мелочах иногда скрывается самое важное.</span></div>
+<div class="reason"><div style="font-size:35px">🌷</div><b>Ты — это ты</b><span>Мне нравится твоя особенность и твой характер.</span></div>
+</div>
+<button onclick="show('galaxyScene')">И ещё один сюрприз ✨</button>
+</section>
+
+<section id="galaxyScene" class="panel hidden">
+<div class="galaxy">
+<div class="stars"></div><div class="beam"></div>
+<div style="position:relative;z-index:2">
+<div class="eyebrow" style="color:#d9c8ff">для тебя — через всю вселенную</div>
+<h2>Ты особенная, Милана</h2>
+<p>Пусть эти слова сияют для тебя на разных языках 💫</p>
+<div class="words" id="words"></div>
+<p style="margin-top:38px">♡ от меня — тебе ♡</p>
+</div>
+</div>
+<button style="margin-top:22px" onclick="restart()">Посмотреть ещё раз ♡</button>
+</section>
+<footer>Сделано с теплом специально для Миланы 💗</footer>
+</main>
+<script>
+const scenes=['start','letterScene','reasonsScene','galaxyScene'];
+function show(id){scenes.forEach(s=>document.getElementById(s).classList.toggle('hidden',s!==id));window.scrollTo({top:0,behavior:'smooth'});}
+function restart(){show('start')}
+const phrases=['I love you','Я тебя люблю','Je t’aime','Te amo','Ich liebe dich','Ti amo','愛してる','사랑해','أحبك','Σ’ αγαπώ','Я кохаю тебе','Eu te amo','Seni seviyorum','אני אוהב אותך','Ik hou van jou','Jeg elsker deg','Kocham cię','Te iubesc','Обичам те','Volim te','我爱你','Mahal kita','Aku cinta kamu','Anh yêu em','Nakupenda','Aš tave myliu','Es tevi mīlu','Miluji tě','Szeretlek','Te quiero'];
+document.getElementById('words').innerHTML=phrases.map(x=>'<span>'+x+'</span>').join('');
+function heart(){const e=document.createElement('div');e.className='heart';e.textContent=['♡','♥','🌸','✿'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(14+Math.random()*22)+'px';e.style.animationDuration=(7+Math.random()*6)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),14000)}
+setInterval(heart,850);
+</script>
+</body>
+</html>
